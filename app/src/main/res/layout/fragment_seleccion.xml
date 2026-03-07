@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selección de entrenamiento"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4B4353" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona las partes del cuerpo que deseas trabajar, tu nivel de entrenamiento y si quieres activar recordatorios."
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#5A5161" />
+
+        <CheckBox
+            android:id="@+id/cbPecho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pecho" />
+
+        <CheckBox
+            android:id="@+id/cbPierna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pierna" />
+
+        <CheckBox
+            android:id="@+id/cbEspalda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espalda" />
+
+        <CheckBox
+            android:id="@+id/cbAbdomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abdomen" />
+
+        <CheckBox
+            android:id="@+id/cbGluteo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glúteo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de entrenamiento"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#4B4353" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPrincipiante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principiante" />
+
+            <RadioButton
+                android:id="@+id/rbIntermedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermedio" />
+
+            <RadioButton
+                android:id="@+id/rbAvanzado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avanzado" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switchNotificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar recordatorios"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnGuardarSeleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar selección"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoSeleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá tu selección..."
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#4B4353"
+            android:background="#EEE8F2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnAtrasSeleccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Atrás"
+                android:textStyle="bold"
+                android:minHeight="48dp"
+                android:backgroundTint="#CDB4DB"
+                android:textColor="#4B4353" />
+
+            <Button
+                android:id="@+id/btnSiguienteSeleccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Siguiente"
+                android:textStyle="bold"
+                android:minHeight="48dp"
+                android:backgroundTint="#CDB4DB"
+                android:textColor="#4B4353" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
